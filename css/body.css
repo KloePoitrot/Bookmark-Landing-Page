@@ -1,0 +1,358 @@
+section{
+    max-width: 1440px;
+    margin:auto;
+    padding:5rem 0
+}
+h1{
+    font-size:3rem;
+    font-weight: 500;
+    margin-bottom:2rem
+}
+
+
+.flex{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:7rem;
+    align-items: center;
+}
+.flex > img{
+    width:100%
+}
+
+svg{
+    stroke:#5267DF
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+========
+===================
+=========================
+BOXES
+=========================
+===================
+========
+*/
+.middleBox{
+    width:50%;
+    text-align: center;
+    margin:auto
+}
+.middleBox h2{
+    font-size:2.5rem;
+    font-weight: 500;
+    margin-bottom:2rem
+}
+.middleBox p {
+    color:hsl(229, 8%, 60%);
+    margin-bottom:2rem;
+    line-height: 1.5rem;
+}
+
+
+.sideBox h3, .sideBox h2{
+    font-size:2.5rem;
+    font-weight: 500;
+    margin-bottom:2rem
+}
+.sideBox p {
+    color:hsl(229, 8%, 60%);
+    margin-bottom:2rem;
+    line-height: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+========
+===================
+=========================
+TABS
+=========================
+===================
+========
+*/
+#nav{
+    text-align: center;
+    margin:3rem 0;
+}
+#nav a{
+    text-align: center;
+    padding:1rem 3rem;
+    margin:0 -3px;
+    border-bottom:3px solid hsl(216, 20%, 95%);
+    font-weight: 400;
+    display: inline-block;
+}
+#nav a.active{
+    text-align: center;
+    padding:1rem 3rem;
+    margin:0 -3px;
+    border-bottom:3px solid hsl(0, 94%, 66%);
+    font-weight: 500;
+    display: inline-block;
+    opacity: 1;
+}
+#nav a.active:hover{
+    color:hsl(229, 31%, 21%)
+}
+#simpleBookmark, #speedySearching, #easySharing{
+    padding:2rem 0
+}
+#speedySearching, #easySharing{
+    display:none
+}
+
+
+
+
+
+
+
+
+
+/* 
+========
+===================
+=========================
+DOWNLOAD
+=========================
+===================
+========
+*/
+#download{
+    display: flex;
+    justify-content: center;
+}
+#dlChrome, #dlFirefox, #dlOpera{
+    text-align: center;
+    box-shadow: 0 10px 15px rgb(223, 225, 235);
+    border-radius: 1rem;
+    max-width:280px;
+}
+#download a, #download article div{
+    margin:1rem
+}
+#dlChrome{
+    margin: 0 1rem 3rem 1rem!important
+} 
+#dlFirefox{
+    margin: 1.5rem 1rem!important;
+} 
+#dlOpera{
+    margin: 3rem 1rem 0 1rem!important
+}
+
+
+
+
+
+
+
+/* 
+========
+===================
+=========================
+COLLAPSES
+=========================
+===================
+========
+*/
+.collapses{
+    max-width:55%;
+    margin:1rem auto;
+    border-top:1px solid rgb(223, 225, 235);
+    text-align: center;
+}
+.collapses > div{
+    border-bottom:1px solid rgb(223, 225, 235);
+}
+.collapsHeader{
+    padding:1rem 0;
+    display:flex;
+    justify-content: space-between;
+}
+.collapsHeader h3{transition: 0.5s ease-out;}
+.collapsHeader h3:hover{
+    color:hsl(0, 94%, 66%);
+    transition: 0.1s ease-in;
+}
+.collapsHeader img{
+    height:15px;
+    width:auto;
+}
+.collapsContent{
+    display:none
+}
+.collapses a{
+    margin:3rem auto;
+}
+
+/* active */
+.active .collapsHeader svg{
+    transform: rotate(180deg);
+    stroke: hsl(0, 94%, 66%)!important;
+}
+.active .collapsContent{
+    display: block;
+    text-align: left;
+    padding:1rem 0 2rem 0;
+    color: hsl(229, 8%, 60%);
+}
+
+
+
+
+
+
+
+
+
+/* 
+========
+===================
+=========================
+linkbutton
+=========================
+===================
+========
+*/
+.linkButton{
+    border:2px solid hsl(231, 69%, 60%);
+    border-radius:.5rem;
+    background:hsl(231, 69%, 60%);
+    color:#fff;
+    padding:.75rem 1rem;
+    box-shadow:0 5px 10px #00000023;
+    display:inline-block;
+    margin-right:20px
+}
+.linkButton:hover{
+    border:2px solid hsl(231, 69%, 60%);
+    background:#fff;
+    color:hsl(231, 69%, 60%);
+}
+.linkButton.white{
+    border:2px solid  hsl(216, 20%, 95%);
+    background: hsl(216, 20%, 95%);
+    color:hsl(229, 31%, 21%);
+}
+.linkButton.white:hover{
+    border:2px solid  hsl(229, 8%, 60%);
+    background: #fff;
+    color:hsl(229, 31%, 21%);
+}
+.linkButton.red{
+    padding:.5rem 2rem;
+    background: hsl(0, 94%, 66%);
+    border-color: hsl(0, 94%, 66%);
+}
+.linkButton.red:hover{
+    padding:.5rem 2rem;
+    background: #fff;
+    border-color: hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+========
+===================
+=========================
+BLUE SECTION FOOTER
+=========================
+===================
+========
+*/
+.bluesection{
+    background:hsl(231, 69%, 60%);
+}
+.bluesection section > *{
+    width:40%;
+    color:#fff!important; 
+    margin: auto;
+    text-align:center!important;
+}
+
+.bluesection h2{
+    font-size: .8rem!important;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.bluesection h3{
+    font-size: 2.5rem;
+    margin:2rem auto
+}
+
+.bluesection form{
+    display: flex;
+    gap:30px;
+}
+
+.bluesection form div{
+    flex:1!important;
+    width:100%!important;
+    background:hsl(0, 0%, 100%);
+    padding:2px;
+    border-radius:.5rem;
+}
+.bluesection form div p{
+    display:none
+}
+
+#email{
+    flex:1!important;
+    width:calc(100% - 2rem)!important;
+    height:100%;
+    border:none;
+    border-radius: .5rem;
+    padding:0 1rem;
+    box-shadow: 0 2px 3px #00000023;
+}
+#submit .linkButton.red{
+    margin:0!important
+}
+
+/* Error message */
+.bluesection form div.error{
+    border-radius:.5rem .5rem 0 0!important;
+    background:hsl(0, 94%, 66%)!important;
+}
+.bluesection form div p.error{
+    display:block;
+    flex:1!important;
+    background:hsl(0, 94%, 66%);
+    color: #fff;
+    font-style: italic;
+    font-size: .75rem;
+    margin: 0 -2px;
+    padding:.25rem .5rem;
+    text-align:left;
+    border-radius:0 0 .5rem .5rem;
+}

@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="css/style.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   
@@ -18,18 +19,18 @@
         <li><a href="#features">Features</a></li>
         <li><a href="pricing">Pricing</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#login">Login</a></li>
+        <li><a href="#login" class="linkButton red" id="logButton">Login</a></li>
       </ul>
     </nav>
   </header>
 
-  <section>
-    <article>
+  <section class="flex">
+    <article class="sideBox">
       <h1>A Simple Bookmark Manager</h1>
       <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
       <div>
-        <a href="">Get it on Chrome</a>
-        <a href="">Get it on Firefox</a>
+        <a class="linkButton" href="">Get it on Chrome</a>
+        <a class="linkButton white" href="">Get it on Firefox</a>
       </div>
     </article>
 
@@ -37,7 +38,7 @@
   </section>
 
   <section id="features">
-    <article>
+    <article class="middleBox">
       <h2>Features</h2>
       <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
     </article>
@@ -45,126 +46,146 @@
 
     <!-- Navigation features -->
     <div id="nav">
-      <a id="navBookmark" href="#simpleBookmark">Simple Bookmark</a>
-      <a id="navSearhing" href="#speedySearching">Speedy Searching</a>
-      <a id="navsharing" href="#easySharing">Easy Sharing</a>
+      <a id="navBookmark" class="active">Simple Bookmark</a>
+      <a id="navSearhing">Speedy Searching</a>
+      <a id="navsharing">Easy Sharing</a>
     </div>
 
     <!-- Tab 1 -->
-    <div id="simpleBookmark">
+    <div class="flex" id="simpleBookmark">
       <img src="img/illustration-features-tab-1.svg" alt="Illustration of a Simple Bookmark Manager section">
 
-      <article>
+      <article class="sideBox">
         <h3>Bookmark in one click</h3>
         <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-        <a href="">More info</a>
+        <a class="linkButton" href="">More info</a>
       </article>
     </div>
 
     <!-- Tab 2 -->
-    <div id="speedySearching">
+    <div class="flex odd" id="speedySearching">
       <img src="img/illustration-features-tab-2.svg" alt="Illustration of a Simple Bookmark Manager section">
 
-      <article>
+      <article class="sideBox">
         <h3>Intelligent search</h3>
         <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-        <a href="">More info</a>
+        <a class="linkButton" href="">More info</a>
       </article>
     </div>
 
     <!-- Tab 3 -->
-    <div id="easySharing">
+    <div class="flex" id="easySharing">
       <img src="img/illustration-features-tab-3.svg" alt="Illustration of a Simple Bookmark Manager section">
 
-      <article>
+      <article class="sideBox">
         <h3>Share your bookmarks</h3>
         <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-        <a href="">More info</a>
+        <a class="linkButton" href="">More info</a>
       </article>
     </div>
   </section>
 
   <section>
-    <article>
+    <article class="middleBox">
       <h2>Download the extension</h2>
       <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
     </article>
 
-    <div>
+    <div id="download">
       <article id="dlChrome">
-        <img src="img/logo-chrome.svg" alt="chrome logo">
-        <h3>Add to Chrome</h3>
-        <p>Minimum version 62</p>
+        <div>
+          <img src="img/logo-chrome.svg" alt="chrome logo">
+          <h3>Add to Chrome</h3>
+          <p>Minimum version 62</p>
+        </div>
         <img src="img/bg-dots.svg" alt="divider">
-        <a href="#">Add and Install Extension</a>
+        <a class="linkButton" href="#">Add and Install Extension</a>
       </article>
 
       <article id="dlFirefox">
-        <img src="img/logo-firefox.svg" alt="firefor logo">
-        <h3>Add to Firefox</h3>
-        <p>Minimum version 55</p>
+        <div>
+          <img src="img/logo-firefox.svg" alt="firefor logo">
+          <h3>Add to Firefox</h3>
+          <p>Minimum version 55</p>
+        </div>
         <img src="img/bg-dots.svg" alt="divider">
-        <a href="#">Add and Install Extension</a>
+        <a class="linkButton" href="#">Add and Install Extension</a>
       </article>
 
       <article id="dlOpera">
-        <img src="img/logo-opera.svg" alt="opera logo">
-        <h3>Add to Opera</h3>
-        <p>Minimum version 46</p>
+        <div>
+          <img src="img/logo-opera.svg" alt="opera logo">
+          <h3>Add to Opera</h3>
+          <p>Minimum version 46</p>
+        </div>
         <img src="img/bg-dots.svg" alt="divider">
-        <a href="#">Add and Install Extension</a>
+        <a class="linkButton" href="#">Add and Install Extension</a>
       </article>
     </div>
   </section>
 
   <section>
-    <h2>Frequently Asked Questions</h2>
-    <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+    <article class="middleBox">
+      <h2>Frequently Asked Questions</h2>
+      <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+    </article>
+    
 
-    <!-- Collapse 1 -->
-    <h3 class="collapsHeader">What is Bookmark?</h3>
-    <p class="collapsContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+    <div class="collapses">
+      <!-- Collapse 1 -->
+      <div>
+        <div class="collapsHeader"><h3>What is Bookmark?</h3> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none"  stroke-width="3" d="M1 1l8 8 8-8"/></svg></div>
+        <p class="collapsContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+      </div>
 
-    <!-- Collapse 2 -->
-    <h3 class="collapsHeader">How can I request a new browser?</h3>
-    <p class="collapsContent">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+      <!-- Collapse 2 -->
+      <div>
+        <div class="collapsHeader"><h3>How can I request a new browser?</h3> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none"  stroke-width="3" d="M1 1l8 8 8-8"/></svg></div>
+        <p class="collapsContent">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+      </div>
 
-    <!-- Collapse 3 -->
-    <h3 class="collapsHeader">Is there a mobile app?</h3>
-    <p class="collapsContent">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
+      <!-- Collapse 3 -->
+      <div>
+        <div class="collapsHeader"><h3>Is there a mobile app?</h3> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none"  stroke-width="3" d="M1 1l8 8 8-8"/></svg></div>
+        <p class="collapsContent">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
+      </div>
 
-    <!-- Collapse 4 -->
-    <h3 class="collapsHeader">What about other Chromium browsers?</h3>
-    <p class="collapsContent">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+      <!-- Collapse 4 -->
+      <div>
+        <div class="collapsHeader"><h3>What about other Chromium browsers?</h3><svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none"  stroke-width="3" d="M1 1l8 8 8-8"/></svg></div>
+        <p class="collapsContent">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+      </div>
 
-    <a href="#">More info</a>
+      <a class="linkButton" href="#">More info</a>
+    </div>
+    
   </section>
 
 
-  <section>
-    <h2>35,000+ already joined</h2>
-    <h3>Stay up-to-date with what we're doing</h3>
-    <form action="">
-      <input type="email" name="email" id="email">
-      <input type="submit" name="submit" id="submit" value="Contact Us">
-    </form>
-  </section>
+  <div class="bluesection">
+    <section>
+      <h2>35,000+ already joined</h2>
+      <h3>Stay up-to-date with what we're doing</h3>
+      <form action="">
+        <div id="#errorMsg">
+          <input type="email" name="email" placeholder="exemple@email.com" id="email">
+          <p>Whoops, make sure it's an email!</p>
+        </div>
+        <input type="submit" name="submit" id="submit" value="Contact Us" class="linkButton red">
+      </form>
+    </section>
+  </div>
 
-  
-  Features
-  Pricing
-  Contact
-  
   <footer>
       <div>
-        <img src="img/logo-bookmark.svg" alt="website logo">
+        <img id="footerLogo"" src="img/logo-bookmark-dark.svg" alt="website logo">
 
-        <ul>
+        <ul id="footerNav">
           <li><a href="#features">Features</a></li>
           <li><a href="pricing">Pricing</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <ul>
+        <ul id="footerSocials">
           <li><a href="#features"><img src="img/icon-facebook.svg" alt="facebook logo"></a></li>
           <li><a href="pricing"><img src="img/icon-twitter.svg" alt="twitter logo"></a></li>
         </ul>
@@ -172,7 +193,7 @@
 
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="">Kloé Poitrot</a>.
     </p>
   </footer>
 </body>

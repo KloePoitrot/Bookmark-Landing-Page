@@ -1,0 +1,89 @@
+/* 
+========
+===================
+=========================
+FOOTER
+=========================
+===================
+========
+*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5rem 3rem;
+    max-width: 1440px;
+    margin:auto;
+}
+header img{
+    width:auto;
+    height:50px;
+}
+header nav{
+    align-self: center;
+}
+header nav ul{
+    align-items: center;
+    display: flex;
+    gap: 2.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+========
+===================
+=========================
+FOOTER
+=========================
+===================
+========
+*/
+footer{
+    background: hsl(229, 31%, 21%);
+    padding:2rem 0
+}
+footer div, footer p{
+    max-width: 1440px;
+    color:hsl(229, 8%, 60%)!important;
+    margin:auto;
+}
+footer div{margin-bottom:1rem;}
+footer p{
+    text-align: right;
+    font-size: .8rem;
+}
+footer a{
+    color:#fff;
+    font-size: .8rem;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+    gap:3rem;
+}
+#footerLogo{
+    width:auto;
+    height:40px;
+}
+#footerNav{
+    flex:1
+}
+footer div ul{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap:2.5rem;
+    text-transform:uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}

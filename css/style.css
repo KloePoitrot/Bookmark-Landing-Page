@@ -1,0 +1,23 @@
+@import url('header-n-footer.css');
+@import url('body.css');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+*{
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    padding:0;
+    color:hsl(229, 31%, 21%);
+    font-family: 'Rubik', sans-serif;
+    font-weight:400;
+    font-size:18px;
+}
+
+a, button{
+    transition: 0.5s ease-out!important;
+    color:hsl(229, 31%, 21%);
+}
+a:hover, button:hover{
+    color:hsl(0, 94%, 66%);
+    transition: 0.1s ease-in!important;
+}
