@@ -112,12 +112,16 @@ TABS
 #nav a.active:hover{
     color:hsl(229, 31%, 21%)
 }
+
 #simpleBookmark, #speedySearching, #easySharing{
-    padding:2rem 0
+    display:none;
+    padding:2rem 0;
 }
-#speedySearching, #easySharing{
-    display:none
+#simpleBookmark.active, #speedySearching.active, #easySharing.active{
+    display: flex!important;
 }
+#navBookmark:hover, #navSearhing:hover, #navsharing:hover{cursor:pointer;}
+
 
 
 

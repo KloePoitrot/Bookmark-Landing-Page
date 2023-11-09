@@ -21,6 +21,10 @@ a:hover, button:hover{
     color:hsl(0, 94%, 66%);
     transition: 0.1s ease-in!important;
 }
+section{
+    padding-left:1rem;
+    padding-right:1rem;
+}
 
 
 
