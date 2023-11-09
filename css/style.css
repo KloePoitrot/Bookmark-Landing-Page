@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 @import url('header-n-footer.css');
 @import url('body.css');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
 *{
     margin:0;
@@ -20,4 +20,39 @@ a, button{
 a:hover, button:hover{
     color:hsl(0, 94%, 66%);
     transition: 0.1s ease-in!important;
+}
+
+
+
+
+
+
+
+/* 
+========
+===================
+=========================
+BACKGROUND
+=========================
+===================
+========
+*/
+.background1, .background2{
+    display: block;
+    position: absolute;
+    height:400px;
+    z-index:-1;
+    background:rgb(83, 104, 223)
+}
+.background1{
+    right:0;
+    margin-top:10rem;
+    width:35%;
+    border-radius:15rem 0 0 15rem;
+}
+.background2{
+    left:0;
+    margin-top:10rem;
+    border-radius:0 15rem 15rem 0;
+    width:40%;
 }

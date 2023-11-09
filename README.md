@@ -35,10 +35,3 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-### What I learned
-
-- TBA
-
-### Useful resources
-
-- TBA.
