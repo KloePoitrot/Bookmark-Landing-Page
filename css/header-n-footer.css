@@ -26,6 +26,9 @@ header nav ul{
     display: flex;
     gap: 2.5em;
 }
+#headerLogo img{
+    content:url("/img/logo-bookmark.svg")
+}
 #burgerMenu{
     display: none;
 }

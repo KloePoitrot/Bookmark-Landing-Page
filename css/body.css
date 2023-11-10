@@ -325,20 +325,21 @@ BLUE SECTION FOOTER
     margin:2rem auto
 }
 
-.bluesection form{
+.bluesection .form{
     display: flex;
     gap:30px;
 }
 
-.bluesection form div{
+.bluesection .form div{
     flex:1!important;
     width:100%!important;
     background:hsl(0, 0%, 100%);
     padding:2px;
     border-radius:.5rem;
 }
-.bluesection form div p{
-    display:none
+.bluesection .form div p{
+    display:none;
+    border-radius:0 0 .5rem .5rem!important;
 }
 
 #email{
@@ -355,11 +356,11 @@ BLUE SECTION FOOTER
 }
 
 /* Error message */
-.bluesection form div.error{
+.bluesection .form div.error{
     border-radius:.5rem .5rem 0 0!important;
     background:hsl(0, 94%, 66%)!important;
 }
-.bluesection form div p.error{
+.bluesection .form div p.error{
     display:block;
     flex:1!important;
     background:hsl(0, 94%, 66%);
@@ -369,22 +370,17 @@ BLUE SECTION FOOTER
     margin: 0 -2px;
     padding:.25rem .5rem;
     text-align:left;
-    border-radius:0 0 .5rem .5rem;
+    border-radius:0 0 .5rem .5rem!important;
 }
 
-.bluesection form div.success{
-    border-radius:.5rem .5rem 0 0!important;
+.bluesection .form div.success{
     background:hsl(138, 50%, 42%)!important;
 }
-.bluesection form div p.success{
-    display:block;
-    flex:1!important;
-    background:hsl(138, 50%, 42%);
-    color: #fff;
-    font-style: italic;
-    font-size: .75rem;
-    margin: 0 -2px;
-    padding:.25rem .5rem;
-    text-align:left;
-    border-radius:0 0 .5rem .5rem;
+.bluesection .form div p.success{
+    color: #fff!important;
+    background:hsl(138, 50%, 42%)!important;
+}
+
+input:focus-visible{
+    outline: 0px solid;
 }

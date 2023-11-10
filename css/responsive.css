@@ -137,17 +137,17 @@
     .bluesection section > *{
         width:100%
     }
-    .bluesection section form{
+    .bluesection section .form{
         flex-direction: column;
     }
-    .bluesection section form div{
+    .bluesection section .form div{
         flex-direction: column;
         max-width:calc(100% - .25rem);
     }
     #email{
         padding:1rem!important;
     }
-    #submit{
+    #subm{
         margin:0;
         padding:1rem
     }
@@ -168,6 +168,9 @@
     }
     .attribution{
         text-align: center;
+    }
+    .bluesection .form div.error, .bluesection .form div.success{
+        border-radius:.5rem!important;
     }
 }
 

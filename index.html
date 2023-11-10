@@ -13,7 +13,7 @@
 <body>
 
   <header class="">
-    <img src="img/logo-bookmark.svg" alt="website logo">
+    <img id="headerLogo" src="img/logo-bookmark.svg" alt="website logo">
     <nav>
       <ul>
         <li><a href="#features">Features</a></li>
@@ -172,16 +172,16 @@
 
 
   <div class="bluesection">
-    <section>
+    <section id="bsec">
       <h2>35,000+ already joined</h2>
       <h3>Stay up-to-date with what we're doing</h3>
-      <form action="">
+      <div class="form">
         <div id="#errorMsg">
           <input type="text" name="email" placeholder="exemple@email.com" id="email">
           <p>Whoops, make sure it's an email!</p>
         </div>
-        <input type="submit" name="submit" id="submit" value="Contact Us" class="linkButton red">
-      </form>
+        <button id="subm" class="linkButton red">Contact Us</button>
+      </div>
     </section>
   </div>
 
