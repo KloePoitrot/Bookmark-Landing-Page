@@ -12,6 +12,7 @@
     header.responsive #burgerMenu{
         align-self:baseline;
     }
+    
     header.responsive a{
         color: #fff!important;
     }
@@ -35,7 +36,7 @@
     }
     header.responsive nav li a {
         display: block!important;
-        font-size:2rem;
+        font-size:1rem;
         text-transform: uppercase;
         font-weight: 400;
         letter-spacing: 5px;
@@ -74,6 +75,10 @@
 
 
 @media screen and (max-width:974px) {
+    #headerLogo{
+        width:130px!important;
+        height:22px!important
+    }
     #burgerMenu{
         display: flex!important;
         align-self: center;
