@@ -36,13 +36,35 @@ document.querySelector('#navsharing').addEventListener('click', () =>{
 // TABS
 document.querySelectorAll('.collapses > div').forEach(tab => {
     tab.addEventListener('click', (e) => {
-        if(document.querySelector('.collapses > div').className === ""){
-            document.querySelector('.collapses > div').classList.add('active')
+        if(tab.className === ""){
+            tab.classList.add('active')
             return
         }
-        if(document.querySelector('.collapses > div').className === "active"){
-            document.querySelector('.collapses > div').classList.remove('active')
+        if(tab.className === "active"){
+            tab.classList.remove('active')
             return
         }
     })
 })
+
+
+
+
+
+// Form
+document.querySelector('#submit').addEventListener('click', (e) => {
+    e.preventDefault
+
+    let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    let mailCheck = document.querySelector('#email').value
+
+    if(regex.test(mailCheck)){
+        console.log('Good!')
+        document.querySelector('#errorMsg').classList.add('success')
+        document.querySelector('#errorMsg p').classList.add('success')
+    } else {
+        console.log('No good...')
+        document.querySelector('#errorMsg').classList.add('error')
+        document.querySelector('#errorMsg').classList.add('error')
+    }
+}, true)

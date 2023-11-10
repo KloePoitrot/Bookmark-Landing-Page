@@ -12,26 +12,30 @@
 </head>
 <body>
 
-  <header>
+  <header class="">
     <img src="img/logo-bookmark.svg" alt="website logo">
     <nav>
       <ul>
         <li><a href="#features">Features</a></li>
-        <li><a href="pricing">Pricing</a></li>
+        <li><a href="#pricing">Pricing</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#login" class="linkButton red" id="logButton">Login</a></li>
+      </ul>
+      <ul class="socialsRes">
+        <li><a href="#"><img src="img/icon-facebook.svg" alt="facebook logo"></a></li>
+        <li><a href="#"><img src="img/icon-twitter.svg" alt="twitter logo"></a></li>
       </ul>
     </nav>
     <img id="burgerMenu" src="img/icon-hamburger.svg" alt="">
   </header>
 
-  <section class="flex">
+  <section class="flex" id="section1">
     <article class="sideBox">
       <h1>A Simple Bookmark Manager</h1>
       <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
       <div>
-        <a class="linkButton" href="">Get it on Chrome</a>
-        <a class="linkButton white" href="">Get it on Firefox</a>
+        <a class="linkButton" href="#dlSection">Get it on Chrome</a>
+        <a class="linkButton white" href="#dlSection">Get it on Firefox</a>
       </div>
     </article>
 
@@ -89,7 +93,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="dlSection">
     <article class="middleBox">
       <h2>Download the extension</h2>
       <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
@@ -173,7 +177,7 @@
       <h3>Stay up-to-date with what we're doing</h3>
       <form action="">
         <div id="#errorMsg">
-          <input type="email" name="email" placeholder="exemple@email.com" id="email">
+          <input type="text" name="email" placeholder="exemple@email.com" id="email">
           <p>Whoops, make sure it's an email!</p>
         </div>
         <input type="submit" name="submit" id="submit" value="Contact Us" class="linkButton red">
@@ -187,12 +191,12 @@
 
         <ul id="footerNav">
           <li><a href="#features">Features</a></li>
-          <li><a href="pricing">Pricing</a></li>
+          <li><a href="#pricing">Pricing</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <ul id="footerSocials">
-          <li><a href="#features"><img src="img/icon-facebook.svg" alt="facebook logo"></a></li>
-          <li><a href="pricing"><img src="img/icon-twitter.svg" alt="twitter logo"></a></li>
+          <li><a href="#"><img src="img/icon-facebook.svg" alt="facebook logo"></a></li>
+          <li><a href="#"><img src="img/icon-twitter.svg" alt="twitter logo"></a></li>
         </ul>
       </div>
 
@@ -201,6 +205,6 @@
       Coded by <a href="">Kloé Poitrot</a>.
     </p>
   </footer>
-  <script src="js/tabs-n-collapses.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

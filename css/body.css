@@ -118,7 +118,7 @@ TABS
     padding:2rem 0;
 }
 #simpleBookmark.active, #speedySearching.active, #easySharing.active{
-    display: flex!important;
+    display: grid!important;
 }
 #navBookmark:hover, #navSearhing:hover, #navsharing:hover{cursor:pointer;}
 
@@ -143,6 +143,17 @@ DOWNLOAD
 #download{
     display: flex;
     justify-content: center;
+}
+#download img:nth-child(1){
+    margin-bottom:.5rem
+}
+#download h3{
+    font-weight: 500;
+    font-size:1.5rem;
+    margin-bottom:.5rem
+}
+#download p{
+    color:hsl(229, 8%, 60%)
 }
 #dlChrome, #dlFirefox, #dlOpera{
     text-align: center;
@@ -352,6 +363,23 @@ BLUE SECTION FOOTER
     display:block;
     flex:1!important;
     background:hsl(0, 94%, 66%);
+    color: #fff;
+    font-style: italic;
+    font-size: .75rem;
+    margin: 0 -2px;
+    padding:.25rem .5rem;
+    text-align:left;
+    border-radius:0 0 .5rem .5rem;
+}
+
+.bluesection form div.success{
+    border-radius:.5rem .5rem 0 0!important;
+    background:hsl(138, 50%, 42%)!important;
+}
+.bluesection form div p.success{
+    display:block;
+    flex:1!important;
+    background:hsl(138, 50%, 42%);
     color: #fff;
     font-style: italic;
     font-size: .75rem;
